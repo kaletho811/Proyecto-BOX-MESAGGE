@@ -1,46 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="326dp"
-        android:layout_height="269dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="233dp"
-        android:layout_height="53dp"
-        android:fontFamily="casual"
-        android:text="BOX-MESSAGE"
-        android:textColor="@color/green"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.101" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="238dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="36dp"
-        android:fontFamily="casual"
-        android:text="Kaleth Santiago Triana Barrios"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/Logo_splash"
+            android:layout_width="326dp"
+            android:layout_height="269dp"
+            android:layout_marginBottom="32dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/Titulo_Splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="BOX-MESSAGE"
+            android:textColor="@color/green"
+            android:textSize="34sp"
+            android:layout_marginBottom="32dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/Mi_nombre_xd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Kaleth Santiago Triana Barrios"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
