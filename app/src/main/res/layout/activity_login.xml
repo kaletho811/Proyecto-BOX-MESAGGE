@@ -14,7 +14,7 @@
         android:padding="16dp"
         android:gravity="center_horizontal">
 
-        <!-- Logo y título en la parte superior -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
 
         </LinearLayout>
 
-        <!-- Texto principal -->
+
         <TextView
             android:id="@+id/primer_texto_log"
             android:layout_width="229dp"
@@ -55,7 +55,7 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <!-- Campos de texto -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 android:inputType="textPassword" />
         </LinearLayout>
 
-        <!-- Botones y texto de recuperación -->
+
         <Button
             android:id="@+id/btn_ingresar"
             android:layout_width="214dp"
