@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="BOX-MESSAGE"
+            android:text="@string/box_message_splash"
             android:textColor="@color/green"
             android:textSize="34sp"
             android:layout_marginBottom="32dp"/>
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Kaleth Santiago Triana Barrios"
+            android:text="@string/kaleth_santiago_triana_barrios"
             android:textSize="16sp"
             android:layout_gravity="end"
             android:layout_marginBottom="16dp" />

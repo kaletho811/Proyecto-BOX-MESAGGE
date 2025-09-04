@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="BOX-MESSAGE"
+            android:text="@string/box_message"
             android:textColor="@color/green"
             android:textSize="34sp" />
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:fontFamily="cursive"
-            android:text="Inicia una nueva aventura con BOX-MESSAGE y descubre una nueva forma de ver el mundo"
+            android:text="@string/inicia_una_nueva_aventura_con_box_message_y_descubre_una_nueva_forma_de_ver_el_mundo"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -50,7 +50,7 @@
             android:layout_height="91dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="@color/green"
-            android:text="Comienza"
+            android:text="@string/comienza"
             android:textSize="24sp" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="Registrate"
+            android:text="@string/registrate"
             android:textColor="@color/orange"
             android:textSize="16sp" />
 

@@ -21,7 +21,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="BOX-MESSAGE"
+            android:text="@string/box_message_profile"
             android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="34sp" />
@@ -39,7 +39,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="Nombre: "
+            android:text="@string/nombre"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -49,7 +49,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="Apellidos: "
+            android:text="@string/apellidos"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -59,7 +59,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="Telefono: "
+            android:text="@string/telefono"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -69,7 +69,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="32dp"
             android:fontFamily="casual"
-            android:text="Correo: "
+            android:text="@string/correo"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -79,7 +79,7 @@
             android:layout_height="87dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="@color/green"
-            android:text="EDITAR"
+            android:text="@string/editar"
             android:textSize="24sp" />
 
     </LinearLayout>

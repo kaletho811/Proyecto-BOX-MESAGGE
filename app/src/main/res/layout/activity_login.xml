@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:fontFamily="casual"
-                android:text="BOX-MESSAGE"
+                android:text="@string/box_message_login"
                 android:textColor="@color/green"
                 android:textSize="30sp" />
 
@@ -50,7 +50,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="cursive"
-            android:text="La aventura esta por iniciar, por favor inicia sesion"
+            android:text="@string/la_aventura_esta_por_iniciar_por_favor_inicia_sesion"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -78,7 +78,7 @@
                 android:layout_height="48dp"
                 android:background="@drawable/estilo_redondeado"
                 android:ems="10"
-                android:hint="Ingresa tu correo"
+                android:hint="@string/ingresa_tu_correo"
                 android:inputType="textEmailAddress" />
         </LinearLayout>
 
@@ -104,7 +104,7 @@
                 android:layout_height="48dp"
                 android:background="@drawable/estilo_redondeado"
                 android:ems="10"
-                android:hint="Ingresa tu contraseña"
+                android:hint="@string/ingresa_tu_contrase_a"
                 android:inputType="textPassword" />
         </LinearLayout>
 
@@ -114,7 +114,7 @@
             android:layout_width="214dp"
             android:layout_height="71dp"
             android:backgroundTint="@color/green"
-            android:text="Ingresar"
+            android:text="@string/ingresar"
             android:textSize="24sp"
             app:strokeColor="@color/orange"
             app:strokeWidth="4dp" />
@@ -126,7 +126,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="casual"
-            android:text="Recupera tu contraseña"
+            android:text="@string/recupera_tu_contrase_a"
             android:textAlignment="center"
             android:textColor="@color/orange"
             android:textSize="16sp" />
@@ -137,7 +137,7 @@
             android:layout_height="96dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="@color/white2"
-            android:text="Ingresa con Google"
+            android:text="@string/ingresa_con_google"
             android:textAlignment="viewEnd"
             android:textColor="@color/black"
             android:textSize="24sp" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="casual"
-            android:text="BOX-MESSAGE"
+            android:text="@string/box_message_register"
             android:textColor="@color/green"
             android:textSize="20sp" />
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="cursive"
-            android:text="Ingresa tus datos para registrarte en BOX-MESSAGE"
+            android:text="@string/ingresa_tus_datos_para_registrarte_en_box_message"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -48,7 +48,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/estilo_redondeado"
             android:fontFamily="casual"
-            android:hint="Ingresa tu nombre" />
+            android:hint="@string/ingresa_tu_nombre" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Campo_apell"
@@ -57,7 +57,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/estilo_redondeado"
             android:fontFamily="casual"
-            android:hint="Ingresa tus apellidos" />
+            android:hint="@string/ingresa_tus_apellidos" />
 
         <EditText
             android:id="@+id/campo_correo"
@@ -67,7 +67,7 @@
             android:background="@drawable/estilo_redondeado"
             android:ems="10"
             android:fontFamily="casual"
-            android:hint="Ingresa tu correo"
+            android:hint="@string/ingresa_tu_correo_register"
             android:inputType="textEmailAddress" />
 
         <com.google.android.material.textfield.TextInputEditText
@@ -77,7 +77,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/estilo_redondeado"
             android:fontFamily="casual"
-            android:hint="Ingresa un número de telefono" />
+            android:hint="@string/ingresa_un_n_mero_de_telefono" />
 
         <EditText
             android:id="@+id/campo_contr"
@@ -87,7 +87,7 @@
             android:background="@drawable/estilo_redondeado"
             android:ems="10"
             android:fontFamily="casual"
-            android:hint="Crea una contraseña"
+            android:hint="@string/crea_una_contrase_a"
             android:inputType="textPassword" />
 
         <EditText
@@ -98,7 +98,7 @@
             android:background="@drawable/estilo_redondeado"
             android:ems="10"
             android:fontFamily="casual"
-            android:hint="Confirma tu contraseña"
+            android:hint="@string/confirma_tu_contrase_a"
             android:inputType="textPassword" />
 
         <CheckBox
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:fontFamily="cursive"
-            android:text="He leído y acepto los términos y condiciones de BOX-MESSAGE"
+            android:text="@string/he_le_do_y_acepto_los_t_rminos_y_condiciones_de_box_message"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:backgroundTint="@color/green"
-            android:text="REGISTRARTE" />
+            android:text="@string/registrarte" />
 
     </LinearLayout>
 </ScrollView>
