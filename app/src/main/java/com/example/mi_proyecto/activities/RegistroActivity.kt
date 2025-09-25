@@ -1,4 +1,4 @@
-package com.example.mi_proyecto
+package com.example.mi_proyecto.activities
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mi_proyecto.R
 
 class RegistroActivity : AppCompatActivity() {
 

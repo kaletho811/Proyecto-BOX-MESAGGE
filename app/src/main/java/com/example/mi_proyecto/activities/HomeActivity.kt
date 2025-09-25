@@ -1,10 +1,13 @@
-package com.example.mi_proyecto
+package com.example.mi_proyecto.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mi_proyecto.activities.LoginActivity
+import com.example.mi_proyecto.R
+import com.example.mi_proyecto.activities.RegistroActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

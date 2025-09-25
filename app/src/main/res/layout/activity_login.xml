@@ -152,5 +152,17 @@
             app:srcCompat="@drawable/google"
             tools:ignore="ContentDescription" />
 
+        <TextView
+            android:id="@+id/link_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="casual"
+            android:text="@string/registrate_login"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />/>
+
     </LinearLayout>
 </ScrollView>

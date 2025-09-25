@@ -33,4 +33,5 @@
     <string name="he_le_do_y_acepto_los_t_rminos_y_condiciones_de_box_message">He leído y acepto los términos y condiciones de BOX-MESSAGE</string>
     <string name="registrarte">REGISTRARTE</string>
     <string name="box_message_splash">BOX-MESSAGE</string>
+    <string name="registrate_login">Registrate</string>
 </resources>
