@@ -34,4 +34,12 @@
     <string name="registrarte">REGISTRARTE</string>
     <string name="box_message_splash">BOX-MESSAGE</string>
     <string name="registrate_login">Registrate</string>
+    <string name="inicio">Inicio</string>
+    <string name="mi_perfil">mi perfil</string>
+    <string name="box_message1">BOX-MESSAGE</string>
+    <string name="pon_tu_nombre_nuevo">Pon tu nombre nuevo</string>
+    <string name="pon_tu_nuevo_apellido">Pon tu nuevo apellido</string>
+    <string name="pon_tu_nuevo_telefono">Pon tu nuevo telefono</string>
+    <string name="pon_tu_nuevo_correo">Pon tu nuevo correo</string>
+    <string name="guadar_cambios">GUADAR CAMBIOS</string>
 </resources>

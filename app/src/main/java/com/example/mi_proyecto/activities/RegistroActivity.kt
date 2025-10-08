@@ -3,6 +3,7 @@ package com.example.mi_proyecto.activities
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CheckBox // Importación necesaria
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -17,7 +18,9 @@ class RegistroActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         sharedPreferences = getSharedPreferences("RegistroPrefs", MODE_PRIVATE)
+        setupOnClickListener()
     }
+
     private fun setupOnClickListener() {
         val etNombres = findViewById<EditText>(R.id.Campo_nom)
         val etApellidos = findViewById<EditText>(R.id.Campo_apell)
@@ -25,17 +28,35 @@ class RegistroActivity : AppCompatActivity() {
         val etTelefono = findViewById<EditText>(R.id.campo_tel)
         val etContrasena = findViewById<EditText>(R.id.campo_contr)
         val etConfirmarContrasena = findViewById<EditText>(R.id.campo_contr2)
+        val chulo = findViewById<CheckBox>(R.id.chulo)
         val btnRegistrar = findViewById<Button>(R.id.btn_regis)
 
         btnRegistrar.setOnClickListener {
-            val nombres = etNombres.text.toString()
-            val apellidos = etApellidos.text.toString()
-            val correo = etCorreo.text.toString()
-            val telefono = etTelefono.text.toString()
+            Toast.makeText(this, "Botón presionado.", Toast.LENGTH_SHORT).show()
+
+            val nombres = etNombres.text.toString().trim()
+            val apellidos = etApellidos.text.toString().trim()
+            val correo = etCorreo.text.toString().trim()
+            val telefono = etTelefono.text.toString().trim()
             val contrasena = etContrasena.text.toString()
+            val confirmarContrasena = etConfirmarContrasena.text.toString()
+            val aceptoTerminos = chulo.isChecked
+
+            if (validarCampos(nombres, apellidos, correo, telefono, contrasena, confirmarContrasena, aceptoTerminos)) {
+
+                if (contrasena == confirmarContrasena) {
+                    guardarDatosRegistro(nombres, apellidos, correo, telefono, contrasena)
+                    Toast.makeText(this, "Registro exitoso. Iniciando sesión...", Toast.LENGTH_LONG).show()
+                    finish()
+                } else {
+                    Toast.makeText(this, "Las contraseñas NO coinciden.", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
     }
-    private fun validarCampos(nombres: String, apellidos: String, correo: String, telefono: String, contrasena: String, confirmarContrasena: String): Boolean {
+
+    private fun validarCampos(nombres: String, apellidos: String, correo: String, telefono: String, contrasena: String, confirmarContrasena: String, aceptoTerminos: Boolean): Boolean {
+
         if(nombres.isEmpty()){
             Toast.makeText(this, "Por favor ingrese su nombre", Toast.LENGTH_SHORT).show()
             return false
@@ -60,8 +81,11 @@ class RegistroActivity : AppCompatActivity() {
             Toast.makeText(this, "Por favor confirme su contraseña", Toast.LENGTH_SHORT).show()
             return false
         }
+        if (!aceptoTerminos) {
+            Toast.makeText(this, "Debes aceptar los términos y condiciones.", Toast.LENGTH_SHORT).show()
+            return false
+        }
         return true
-
     }
 
     private fun guardarDatosRegistro(nombres: String, apellidos: String, correo: String, telefono: String, contrasena: String) {
@@ -72,6 +96,5 @@ class RegistroActivity : AppCompatActivity() {
         editor.putString("telefono", telefono)
         editor.putString("contrasena", contrasena)
         editor.apply()
-
     }
 }
