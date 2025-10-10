@@ -1,87 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:fillViewport="true">
+    android:background="@color/white">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <TextView
-            android:id="@+id/Titulo_perfil"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="casual"
-            android:text="@string/box_message_profile"
-            android:textAlignment="center"
-            android:textColor="@color/green"
-            android:textSize="34sp" />
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginEnd="5dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/ic_perfil" />
+            <TextView
+                android:id="@+id/Titulo_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="casual"
+                android:text="@string/box_message_profile"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="34sp" />
 
-        <TextView
-            android:id="@+id/Nom_perfil"
-            android:layout_width="302dp"
-            android:layout_height="35dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="casual"
-            android:text="@string/nombre"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_perfil" />
 
-        <TextView
-            android:id="@+id/Ape_perfil"
-            android:layout_width="302dp"
-            android:layout_height="35dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="casual"
-            android:text="@string/apellidos"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/Nom_perfil"
+                android:layout_width="302dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="casual"
+                android:text="@string/nombre"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/Tel_perfil"
-            android:layout_width="302dp"
-            android:layout_height="35dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="casual"
-            android:text="@string/telefono"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/Ape_perfil"
+                android:layout_width="302dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="casual"
+                android:text="@string/apellidos"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/Corr_perfil"
-            android:layout_width="302dp"
-            android:layout_height="35dp"
-            android:layout_marginBottom="32dp"
-            android:fontFamily="casual"
-            android:text="@string/correo"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/Tel_perfil"
+                android:layout_width="302dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="casual"
+                android:text="@string/telefono"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/btn_edi_perf"
-            android:layout_width="201dp"
-            android:layout_height="87dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/green"
-            android:text="@string/editar"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/Corr_perfil"
+                android:layout_width="302dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="casual"
+                android:text="@string/correo"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
-    </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/btn_edi_perf"
+                android:layout_width="201dp"
+                android:layout_height="87dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/editar"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+</FrameLayout>
